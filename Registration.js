@@ -120,7 +120,7 @@ async function login(){
     window.localStorage.setItem('logininfo',JSON.stringify(out));
    
     // window.open("dashboard.html");
-    window.location.href = "dashboard.html";
+    window.location.href = "Dashboard.html";
    // return true;
   //  for code correctness:-
   //  alert("ok")
