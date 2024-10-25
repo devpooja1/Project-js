@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <style>
+      body{
+        background-color: #f5f4fe;
+      }
+      .main {
+        height: 350px;
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:white;
+        position: relative;
+        top: 100px;
+        border-radius: 20px;
+        left: 400px;
+        background-color: rgb(213, 213, 225);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+      }
+      .main form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .main form input {
+        height: 30px;
+        width: 300px;
+        text-align: center;
+        border-radius: 5px;
+      }
+      .main form button {
+        background-color: black;
+        color: white;
+        height: 30px;
+        width: 130px;
+        border-radius: 5px;
+      }
+      .main form button:hover {
+        background-color: white;
+        color: black;
+      }
+      h4{
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <form >
+        <input type="email" id="email" placeholder="Enter your email Id" />
+        <input type="password" id="password" placeholder="enter your password" />
+
+        <button onclick="return login()">Log in</button>
+      </form>
+      <h4>don't have account?<a href="./register.html">Register</a></h4>
+    </div>
+    <script src="./Registration.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="./Dashboard.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./product.css"/>
+          
+    </head>
+    <body onload="info()">
+    
+        <aside class="sidebar">
+            
+        <header>
+            <img src="./image/logo.svg" alt="">
+        </header>
+            <div id="admin-detail">
+                <ul>
+                    <li><a href="#"> <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5-3YjBcXTqKUlOAeUUtuOLKgQSma2wGG1g&s" alt="" height="50px" width="50px"> </a></li>
+                    <li id="username"></li>
+                    
+                    </ul>
+            </div>
+            
+                <ul>
+                    <h5>E-commers</h5>
+                <li class="dash"><a href="Dashboard.html"> Dashboard </a></li>
+                <li><a href="order.html"><i class="fa-solid fa-receipt"></i> Order <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="product.html"><i class="fa-solid fa-truck"></i> Product <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="buyer.html"><i class="fa-solid fa-wallet"></i>  Buyer <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="customer.html"><i class="fa-regular fa-id-badge"></i> Customer <i class="fa-solid fa-arrow-right"></i></a></li>
+                <h5>Apps</h5>
+                <li><a href="chats.html"><i class="fa-solid fa-square-poll-horizontal"></i> Chats <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="email.html"><i class="fa-regular fa-envelope"></i> Email <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="todo.html"><i class="fa-regular fa-circle-check"></i> Todo App <i class="fa-solid fa-arrow-right"></i></a></li>
+                <h5>Pages</h5>
+                <li><a href="profile.html"><i class="fa-regular fa-user"></i> Profile <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="user.html"><i class="fa-regular fa-user"></i> Users <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="authentication.html"><i class="fa-solid fa-lock"></i> Authentication <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="error.html"><i class="fa-solid fa-circle-exclamation"></i> Error Pages <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="setting.html"><i class="fa-solid fa-gear"></i> Settings <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="pricing.html"><i class="fa-solid fa-wallet"></i> Pricing Table <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i> Search Page <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="faq.html"><i class="fa-regular fa-circle-question"></i> FAQ <i class="fa-solid fa-arrow-right"></i></a></li>
+                <h5> User Interface</h5>
+                <li><a href=""><i class="fa-regular fa-file"></i> Components <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href=""><i class="fa-regular fa-file"></i> Forms <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href=""><i class="fa-regular fa-heart"></i> Content <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-chart-simple"></i> Charts <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-paperclip"></i> Extentions <i class="fa-solid fa-arrow-right"></i></a></li>
+                <h5> Others</h5>
+                <li><a href=""><i class="fa-solid fa-bars"></i> Menu Item <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href=""><i class="fa-regular fa-hand-point-up"></i> Disabled</a></li>
+            </ul>
+        </aside>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <main class="side">
+            <div id="mainheader">
+                <div class="page-title">Overview</div>
+                <div class="search">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="text">search...</div>
+                </div>
+                <div class="cart">
+                    <div><i class="fa-regular fa-bell"></i></div>
+                <div><i class="fa-solid fa-cart-shopping"></i></div>
+                <div><button>Add Product</button></div>
+                </div>
+                
+            </div>
+            <!-- ------------------------------------- -->
+            <section class="order-list">
+                <div class="list-head">
+                    <div style="color: rgb(245, 80, 9)"><i class="fa-solid fa-globe"></i></div><div style="color: rgb(245, 80, 9);">Dashboard</div>
+                    <div><h4>></h4></div><div></div><h4>Orders<h4></h4></div>
+                </div>
+                <!-- ---------------------------- -->
+                 
+            </section>
+             <!-- ----------------------------------------------- -->
+        <!-- <center><div>
+            <select id="searchoption" style="margin-top: 70px;">
+                <option value="name"> search by name </option>
+                <option value="price"> search by price </option>
+             </select>
+        
+             <input type="text" id="searchbox">
+             <button onclick="datasearch()"> search </button>
+        
+        </div></center>
+             <center> 
+            <button><<</button><span></span><button id="incbtn" onclick="pageincrease()">>></button>
+        </center> -->
+        
+            <!-- ------------------------------------------------- -->
+        <center>
+            <h2 style="font-size: 30px; margin-left: 250px; margin-bottom:30px;">Product List
+
+            </h2>
+        </center>
+    
+    <center style="margin-left: 300px;">
+        <table id="tabledata" >
+        <thead>
+            <tr>
+                
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Stock</th>
+                <th>Price</th>
+                <!-- <th>Action</th> -->
+                
+            </tr>
+        </thead>
+        <tbody id="data">
+            <!-- Dynamic rows will be populated here -->
+        </tbody>
+    </table>
+        
+</center>
+
+
+
+</div>
+<script src="loginInfo.js"></script>
+    <script src="./product.js"></script>
+
+
+        </main>
+        <script src="./sidebar.js"></script>
+</body>
+</html>

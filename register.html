@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            background-color: #f5f4fe;
+        }
+        
+        form
+        {
+            height: 450px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(213, 213, 225);
+            position: relative;
+            left: 400px;
+            top: 40px;
+            gap: 20px;
+            border-radius: 20px;
+        }
+        form input{
+            height: 30px;
+            width: 300px;
+            text-align: center;
+        }
+        form button{
+            background-color: black;
+            color: white;
+            height: 30px;
+            width: 130px;
+            border-radius: 5px;
+        }
+        form button:hover{
+            background-color: white;
+            color: black;
+        }
+        h4{
+            margin-top: -5px;
+        }
+
+    </style>
+    <title>Registration form </title>
+</head>
+<body>
+    
+    <form>
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="text" id="image" placeholder="enter image url">
+        <input type="email" id="email" placeholder="enter email">
+        <input type="text" id="mob" placeholder="enter mobile number">
+        <input type="password" id="password" placeholder="enter password">
+        <input type="password" id="cpassword" placeholder="confirm password">
+        <button onclick="registration()">Register</button>
+        <h4>Already have an account?<a href="./index.html">Login</a></h4>
+    </form>
+    <script src="./Registration.js"></script>
+</body>
+</html>

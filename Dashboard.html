@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+                table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin: 2px;
+        }
+
+        .form-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        input {
+            padding: 5px;
+            margin: 5px;
+        }
+        
+    </style>
+</head>
+<body onload="info()">
+
+    <aside class="sidebar">
+        
+    <header>
+        <img src="./image/logo.svg" alt="">
+    </header>
+        <div id="admin-detail">
+            <ul style="font-size:px;">
+                <li><a href="#"> <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5-3YjBcXTqKUlOAeUUtuOLKgQSma2wGG1g&s" alt="" height="50px" width="50px"> </a></li>
+                <li id="username"></li>
+                <!-- <li id="useremail"></li> -->
+                </ul>
+        </div>
+        
+            <ul>
+                <h5>E-commers</h5>
+            <li class="dash"><a href="Dashboard.html"> Dashboard </a></li>
+            <li><a href="order.html"><i class="fa-solid fa-receipt"></i> Order <i class="fa-solid fa-arrow-right"></i>
+            <ul >
+                <li><a href="list.html">List</a></li>
+                <li><a href="orderDetail.html">Detail</a></li>
+            </ul>
+            </a></li>
+            <li><a href="productform.html"><i class="fa-solid fa-truck"></i> Product <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="buyer.html"><i class="fa-solid fa-wallet"></i>  Buyer <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="customer.html"><i class="fa-regular fa-id-badge"></i> Customer <i class="fa-solid fa-arrow-right"></i></a></li>
+            <h5>Apps</h5>
+            <li><a href="chats.html"><i class="fa-solid fa-square-poll-horizontal"></i> Chats <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="email.html"><i class="fa-regular fa-envelope"></i> Email <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="todo.html"><i class="fa-regular fa-circle-check"></i> Todo App <i class="fa-solid fa-arrow-right"></i></a></li>
+            <h5>Pages</h5>
+            <li><a href="profile.html"><i class="fa-regular fa-user"></i> Profile <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="user.html"><i class="fa-regular fa-user"></i> Users <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="authentication.html"><i class="fa-solid fa-lock"></i> Authentication <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="error.html"><i class="fa-solid fa-circle-exclamation"></i> Error Pages <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="setting.html"><i class="fa-solid fa-gear"></i> Settings <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="pricing.html"><i class="fa-solid fa-wallet"></i> Pricing Table <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i> Search Page <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="faq.html"><i class="fa-regular fa-circle-question"></i> FAQ <i class="fa-solid fa-arrow-right"></i></a></li>
+            <h5> User Interface</h5>
+            <li><a href=""><i class="fa-regular fa-file"></i> Components <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href=""><i class="fa-regular fa-file"></i> Forms <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href=""><i class="fa-regular fa-heart"></i> Content <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-chart-simple"></i> Charts <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-paperclip"></i> Extentions <i class="fa-solid fa-arrow-right"></i></a></li>
+            <h5> Others</h5>
+            <li><a href=""><i class="fa-solid fa-bars"></i> Menu Item <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href=""><i class="fa-regular fa-hand-point-up"></i> Disabled</a></li>
+        </ul>
+    </aside>
+    <!-- ------ -->
+     
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <main class="side">
+        <div id="mainheader">
+            <div class="page-title">Overview</div>
+            <div class="search">
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="text">search...</div>
+            </div>
+            <div class="cart">
+                <div><i class="fa-regular fa-bell"></i></div>
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
+            <div><button><a href="productform.html">Add Product</a></button></div>
+            </div>
+            
+        </div>
+   <!-- ------------------------------------------------------------ -->
+    <section class="side-content">
+
+        <div class="sale-content">
+            <div class="sale-content1">
+                <div class="sale-content2">
+                    <h3>Sales Chart <i class="fa-regular fa-circle-question"></i></h3>
+                    <h3>
+                        <select name="" id="">
+                            <option value="">...</option>
+                            <option value="">View Detail</option>
+                            <option value="">Download</option>
+                        </select>
+                    </h3>
+                </div>
+                
+                <div class="line-chart">
+                    <div class="select"><i  class="fa-solid fa-bag-shopping"></i><span>$10.552,40</span><i style="font-size: 10px;"  class="fa-solid fa-up-long">  8.30%</i>
+                    <select name="" id="select-tag">select any month
+                        <option value="">2022</option>
+                        <option value="">October</option>
+                        <option value="">November</option>
+                        <option value="">December</option>
+                        <option value="">2023</option>
+                        <option value="">January</option>
+                        <option value="">Febrary</option>
+                        <option value="">March</option>
+                        <option value="">April</option>
+                        <option value="">May</option>
+                        <option value="">June</option>
+                        <option value="">July</option>
+                        <option value="">August</option>
+                    </select>
+                    </div>
+                    <div ><img src="image/Vetra _ E-Commerce HTML Admin Dashboard Template_files/LINE.png"  alt=""></div>
+                </div>
+                <div class="sale">
+                    <i style="color: orange;"  class="fa-solid fa-circle"></i><span>Sale</span>
+                    <i style="color: green;" class="fa-solid fa-circle"><span>Order</span>
+
+                    </i></div>
+            </div>
+            <div class="chennel-content">
+                <div class="chennel-content1">
+                    <h3>Channel <i class="fa-regular fa-circle-question"></i></h3>
+                    <h3>
+                        <select name="" id="">
+                            <option value="">...</option>
+                            <option value="">View Detail</option>
+                            <option value="">Download</option>
+                        </select>
+                    </h3>
+                </div>
+                <div class="dou-chart">
+                    <div><img src="image/DOU.png" alt="" ></div>
+</div>          <div class="data">
+                    <div>
+                        <div>48%</div>
+                        <div style="color: green;"><i class="fa-solid fa-up-long"></i>30.50%</div>
+                        <div><i style="color: orange;" class="fa-solid fa-circle"></i>Social Media</div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>30%</div>
+                            <div style="color: red;"> <i class="fa-solid fa-down-long"></i>30.50%</div>
+                            <div><i style="color: aqua;" class="fa-solid fa-circle"></i>Google</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>22%</div>
+                            <div style="color: green;"><i class="fa-solid fa-up-long"></i>1.80%</div>
+                            <div><i style="color:rgb(56, 7, 101);" class="fa-solid fa-circle"></i>Email</div>
+                        </div>
+                    </div>
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+        <!-- ================================== -->
+        <div class="order-content">
+            <div class="order">
+                <div class="order1">
+                    <!-- <img src="image/basket-icon-vector-21894451.webp" alt="" height="50px" width="50px"> -->
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h3>...</h3>
+                </div>
+                <div class="order-section">
+                    <span>Orders</span>
+                    <span>310 <img src="image/Your paragraph text (3).png" alt="" height="20px" width="60px" style="margin-left: 30px;"></span>
+                    <span style="color:green ;" style="font-size:5px">Over last month 1.4% <i class="fa-solid fa-up-long"></i></span>
+                </div>
+
+            </div>
+            <div class="sales">
+                <div class="sale1">
+                    <i class="fa-solid fa-wallet"></i>
+                    <h3>...</h3>
+                </div>
+                <div class="sale-section">
+                    <span>Sales</span>
+                    <span>$3.759,0 <img src="image/Your paragraph text (4).png" alt="" height="20px" width="60px" style="margin-left: 30px;"></span>
+                    <span style="color:red ;" style="font-size:5px">Over last month 2.4% <i class="fa-solid fa-down-long"></i></span>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review1">
+                    <div class="review2"><h4>Recent Reviews</h4> <h4 style="color: orange;">View All</h4></div>
+                    <div class="revi">
+                        <ul>
+                            <li class="rev">
+                              <span class="logo">J</span><span>Johny</span>  
+                            </li>
+                            <li><span>I Love the product.</span></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+        </div>
+        <!-- ================================== -->
+
+        <!--  -->
+    
+        <div class="customer-rating">
+            <div class="customer">
+                <div class="cutomer1">
+                    <h3>Customer Rating</h3>
+                    <!-- <h3>...</h3> -->
+                </div>
+                <div class="customer-section">
+                    <span>3.0</span>
+                    <span>
+                        <i style="color: orange;" class="fa-solid fa-star"></i>
+                        <i style="color: orange;" class="fa-solid fa-star"></i>
+                        <i style="color: orange;" class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"> (318)</i>
+                    </span>
+                    <!-- <span><img src="image/green-line.png" alt=""></span> -->
+                    
+                    <button class="btn">Download Report <i class="fa-solid fa-arrow-down-long"></i></button>
+                     </div>
+
+            </div>
+            <!-- --Product-- -->
+            <div class="product">
+                <div class="product1">
+                    <i class="fa-solid fa-cube"></i>
+                    <span>Product Sold</span>
+                    <span>89 Sold</span>
+                    <div ></div>
+                </div>
+                <div class="product-section">
+                    
+                    
+                    <span>
+                    </span>
+                    
+                    
+            </div>
+            </div>
+            <!-- ----- -->
+            <div class="top-company">
+                <div class="company1">
+                    <h3>
+                        Your Top comany 
+
+                        <h4>View All</h4>
+                </div>
+                <div class="company-section">
+                    <span>3.0</span>
+                    <span>
+                        <i style="color: orange;" class="fa-solid fa-star"></i>
+                        <i style="color: orange;" class="fa-solid fa-star"></i>
+                        <i style="color: orange;" class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"> (318)</i>
+                    </span>
+                    <!-- <span><img src="image/green-line.png" alt=""></span> -->
+                    
+                    
+                     </div>
+
+            </div>
+            <!-- ------ -->
+        </div>
+        <div>
+        <center><h2 style="font-size: 30px; margin-left: 250px; margin-bottom: 30px;">Product List</h2></center>
+        <center style="margin-left: 300px;">
+            <table id="tabledata" >
+            <thead>
+                <tr>            
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Stock</th>
+                    <th>Price</th>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody id="data">
+                <!-- Dynamic rows will be populated here -->
+            </tbody>
+        </table>
+            
+    </center>
+</div>
+        <!-- ================================== -->
+    </section>
+    
+
+    <!-- -------------------------------------------------------------- -->
+</main>
+    
+    <!-- ======================= -->
+          <script src="./sidebar.js"></script>
+     <script src="./logininfo.js"></script>
+     <!-- <script src="./product.js"></script> -->
+     
+</body>
+</html>

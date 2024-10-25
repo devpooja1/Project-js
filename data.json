@@ -1,0 +1,52 @@
+{
+  "user": [
+    {
+      "id": "2ab1",
+      "name": "Pooja",
+      "email": "pooja@gmail.com",
+      "image": "data:image/jpeg;base64,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",
+      "mob": "1234512345",
+      "password": "Pooja@1234",
+      "cpassword": "Pooja@1234"
+    },
+    {
+      "id": "9c3d",
+      "name": "Suman",
+      "email": "suman@gmail.com",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM-e7JRrF61PA8WDsiIGlBDKwoR4cH5J2Jbw&s",
+      "mob": "1234512345",
+      "password": "Suman@1234",
+      "cpassword": "Suman@1234"
+    }
+  ],
+  "product": [
+    {
+      "photo": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/s/m/0/-original-imah37gw2wv2ayrf.jpeg?q=70",
+      "name": "Mobile",
+      "stock": "35",
+      "price": "12999",
+      "id": "dff1"
+    },
+    {
+      "id": "203f",
+      "photo": "https://rukminim2.flixcart.com/image/312/312/xif0q/tablet/v/4/h/-original-imagu5gbhgbjqvh6.jpeg?q=70",
+      "name": "Tablet",
+      "stock": "30",
+      "price": "20499"
+    },
+    {
+      "photo": "https://rukminim2.flixcart.com/image/312/312/xif0q/tablet/r/4/m/-original-imagj72vqsfqgzpf.jpeg?q=70",
+      "name": "iPad",
+      "stock": "20",
+      "price": "4000",
+      "id": "be9f"
+    },
+    {
+      "id": "bf72",
+      "photo": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRzdDFJAXfw66PKMJRwSZXNicZGP8TyVQqG8ge5DPX4Oaa_er7QdlkSjTo8w6H4X480lI8By-_0jHYfkM7YBiOga9p-Pxwzk4ZZoc46_n0SjLuR2I_P79kbEA",
+      "name": "Desktop",
+      "stock": "50",
+      "price": "35999"
+    }
+  ]
+}
