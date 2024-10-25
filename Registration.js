@@ -99,7 +99,7 @@
 // ======================login code ======================
 
 async function login(){
-   let data = await fetch('http://localhost:4000/user');
+   let data = await fetch('https://jsondata-rho.vercel.app/data.json');
    let response = await data.json();
    console.log(response);
 
@@ -113,7 +113,7 @@ async function login(){
   
    
    
-   let out = response.find(e=> e.email === email && e.password === password);
+   let out = response.user.find(e=> e.email === email && e.password === password);
   
    console.log(out);
    if(out){
